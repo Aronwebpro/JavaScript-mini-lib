@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<style type="text/css">
+	html, body {
+	font-family: Arial sans-serif; 
+  margin:0; 
+  padding: 0;
+	}
+</style>
+</head>
+<body>
+
+<div class="wrapper" style="max-width: 1350px; margin:auto;">
+          
+<div class="details-similar-larger">
+  <a name="similar_anchor"></a>
+  <h2 class="text-color">Model Scroller<span class="arrow"></span></h2>
+  <div class="border" style="display:block;max-height:290px; overflow: hidden;">
+
+<style>
+.model_scroller .item_cont {
+  display: block;
+  float: left;
+  text-align: center;
+
+}
+.model_scroller .prev, .scroller .next {
+  position:absolute;
+  top: 45px;
+  display:block;
+  width:10%;
+  height:30px; 
+  cursor: pointer;
+}
+.model_scroller .scroller-control {
+    top: 50%;
+    transform: translateY(-50%);  
+}
+.model_scroller .prev {
+  left: 0px;
+  background: transparent url('img/scroller_prev.png') no-repeat 50% 50%;
+}
+.model_scroller .next {
+  right: 0px;
+  background: transparent url('img/scroller_next.png') no-repeat 50% 50%;
+}
+.model_scroller .prev.inactive, .scroller .next.inactive {
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}
+.model_scroller .item_space .moving_space {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0px;
+  transition: left ease-out 0.7s ; 
+}
+.model_scroller .item_space .moving_space .item {
+  
+}
+.model_scroller .item_space .item img {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+}
+.model_scroller {
+/*  overflow-x: hidden;
+  overflow-y: visible;*/
+  position: relative;
+  margin: 0;
+}
+.model_scroller_item ul {
+  max-width: 370px;
+  width:93%;
+  margin: -6px auto 0;
+  padding: 5px;
+  text-align: left;
+  position: relative;
+  list-style: none;
+  
+}
+.model_scroller_item li a {
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size:0.8em;
+}
+
+.scroller-img-wrapper {
+  margin: auto;
+}
+#scroller {
+  width: 100%;
+  min-width: 245px;
+  background-color: #fff;
+  position:relative;
+  font-size:16px;
+}
+#scroller .item_space {
+  margin: 0 auto;
+  padding: 5px 0 10px;
+  height: 18em;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+
+}
+/*Extras*/
+.scroller-title {
+    background-color: #4a4a4a;
+}
+.border {
+    border: 1px solid #c6c6c6;
+    padding: 5px;
+}
+.passive {
+  opacity:0.5;
+}
+.btn-hidden {
+  display: none !important;
+}
+</style>  
+  
+  
+<div id="scroller" class="scroller model_scroller">
+   <div class="prev scroller-control passive" id="scroll_prev"></div>
+   <div class="item_space">
+      <div class="moving_space">
+      <!-- ***************Scroller Items********************* -->
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="img/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" style="max-width:350px;"><img class="loaded" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/Vehicles/Showroom2/2017/NEW/2017-C-SEDAN-AV-D.png" alt="Img Alternative"></div>
+              <ul class="scroller-title">
+                 <li class="details-title">
+                    <a class="text-color" href="_blank">
+                    Your Model</a>
+                 </li>
+                 <li class=""><a class="text-color scroller-price" href="_blank">Additional Title</a></li>
+              </ul>
+           </div>
+        </div>    
+         <!-- ************************************************** -->
+      </div>
+   </div>
+   <div class="next scroller-control" id="scroll_next"></div>
+</div>
+
+
+<!-- Import Scroller JS file -->
+<script type="text/javascript" src="scroller.js"></script>
+
+</body>
+</html>
+
+
