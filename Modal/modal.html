@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal</title>
+
+<style type="text/css">
+
+/*******************Modal Styles***********************************/
+/*Modal*/
+.modal-block {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background-color: rgba(0,0,0,0.3);
+  overflow-y: auto;
+  overflow-x: hidden;  
+}
+.modal-inner {
+  position: relative;
+  max-width: 600px;
+  margin: 10px auto;
+  max-height: 98%;
+  top:-100%;
+  transition:all 0.7s;
+}
+.modal-open {
+  display: block;
+}
+.modal-open-effect {
+  top:0; 
+}
+.modal-inner-content {
+  position: relative;
+  margin: auto; 
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+/*Modal Header*/
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*Header Close Button*/
+.close-button {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+  cursor: pointer;
+}
+.close-button:hover, .close-button:focus {
+  opacity: .35;
+}
+.close-button:active {
+  opacity: .6;
+}
+
+/*Modal Body*/
+.modal-body {
+	padding: 10px;
+}
+
+/*Modal Footer*/
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+/*Footer Close Button*/
+.footer-close-button {
+  padding:8px 17px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.footer-close-button:hover, .footer-close-button:focus {
+  background-color: rgba(0,0,0,.2);
+}
+.footer-close-button:active {
+  background-color: rgba(0,0,0,.5);
+  color:rgba(255,255,255,.8);
+}
+</style>
+</head>
+<body>
+
+<!-- Modal Trigger-->
+<button class="modal-button footer-close-button" data-target="modal1">Open Modal</button> 
+<button class="modal-button footer-close-button" data-target="modal2">Open Modal</button> 
+
+
+<!-- Modal HTML-->
+<div id="modal1" class="modal-block">
+  <div class="modal-inner">
+    <div class="modal-inner-content">
+      <div class="modal-header">
+        <button type="button" class="close-button modal-close-button" data-target="parts-modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">This is Modal 1</h3>
+      </div><!--End modal-header-->
+      <div class="modal-body">
+      	<h2>Title</h2>
+
+      </div><!--End Modal-Body-->
+      <div class="modal-footer">
+      	<span>Modal Footer</span>
+        <button type="button" class="footer-close-button modal-close-button" data-target="parts-modal" aria-label="Close" ><span aria-hidden="true">Close</span></button>
+      </div><!-- End Modal Footer-->
+    </div>
+  </div>
+</div>
+
+<!-- Modal HTML -->
+<div id="modal2" class="modal-block">
+  <div class="modal-inner">
+    <div class="modal-inner-content">
+      <div class="modal-header">
+        <button type="button" class="close-button modal-close-button" data-target="parts-modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">This is Modal 2</h3>
+      </div><!--End modal-header-->
+      <div class="modal-body">
+      <h2>Title</h2>
+
+      </div><!--End Modal-Body-->
+      <div class="modal-footer">
+        <span>Modal Footer</span>
+        <button type="button" class="footer-close-button modal-close-button" data-target="parts-modal" aria-label="Close" ><span aria-hidden="true">Close</span></button>
+      </div><!-- End Modal Footer-->
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="modal.js"></script>
+</body>
+</html>
