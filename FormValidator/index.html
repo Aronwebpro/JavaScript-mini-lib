@@ -21,6 +21,9 @@
     box-sizing: border-box;
 
   }
+  .form-validator h1 {
+    text-align:center;
+  }
   .form-validator label {
     font-size: 1.5em;
     margin-top: 1.2em;
@@ -42,6 +45,11 @@
     background-color: #f9f9f9;
     width: 100%; 
   }
+  .footer {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+  }
   @media all and (max-width: 992px) {
     .form-validator {
       width: 98%;
@@ -56,7 +64,7 @@
 <body>
 
 <div class="form-validator">
-  <h1>Form Sample to test validation</h1>
+  <h1>Form Sample to test Validation</h1>
   <form id="contact-me" class="form"  method="post" name="contactForm" >
     <div class="form-row error-field">
       <label for="inputName">Name:</label>
@@ -84,7 +92,7 @@
   </form>
 </div>
 
-
+<div class="footer"><h2>Developed by Aaron D</h2></div>
 
 <script src="form_validator.js"></script>
 
