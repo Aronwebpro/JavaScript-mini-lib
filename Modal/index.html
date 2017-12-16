@@ -100,13 +100,31 @@
   background-color: rgba(0,0,0,.5);
   color:rgba(255,255,255,.8);
 }
+/*******************Extra Styles for buttons***********************************/
+  body {
+    background-color: #e8e8e8;
+  } 
+  .buttons-wrapper {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+  }
+  .buttons-wrapper button {
+    font-size: 1.5em;
+  }
 </style>
 </head>
 <body>
 
 <!-- Modal Trigger-->
-<button class="modal-button footer-close-button" data-target="modal1">Open Modal</button> 
-<button class="modal-button footer-close-button" data-target="modal2">Open Modal</button> 
+<div class="buttons-wrapper">
+  <h1>Click to test Modal</h1>
+  <button class="modal-button footer-close-button" data-target="modal1">Open Modal</button> 
+  <button class="modal-button footer-close-button" data-target="modal2">Open Modal</button> 
+  <h2>Developed by Aaron D</h2>
+</div>
 
 
 <!-- Modal HTML-->
