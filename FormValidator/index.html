@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> 
+<style type="text/css">
+	html, body {
+	font-family: sans-serif; 
+  margin:0; 
+  padding: 0;
+  font-size:14px;
+  line-height: 1.42857143;
+  background-color: #e8e8e8;
+	}
+  .form-validator {
+    width: 40%;
+    margin:2em auto;
+    background-color: #fff;
+    padding:1.5em;
+    box-sizing: border-box;
+
+  }
+  .form-validator label {
+    font-size: 1.5em;
+    margin-top: 1.2em;
+  }
+  .form-row {
+    margin-top: 1.2em;
+  }
+  .form-validator input, .form-validator textarea {
+    padding: 0.5em;
+    width: 97.5%;
+    font-size: 1.2em;
+  }
+  .form-validator textarea {
+    min-height:50px;
+  }
+  .form-validator  input[type="submit"] {
+    padding: 0.4em 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%; 
+  }
+  @media all and (max-width: 992px) {
+    .form-validator {
+      width: 98%;
+    }
+  }
+</style>
+
+	
+
+
+</head>
+<body>
+
+<div class="form-validator">
+  <h1>Form Sample to test validation</h1>
+  <form id="contact-me" class="form"  method="post" name="contactForm" >
+    <div class="form-row error-field">
+      <label for="inputName">Name:</label>
+      <br>
+      <input type="text" class="form-field" id="inputName" placeholder="Your name" name="name" maxlength="10">
+    </div>
+      <div class="form-row">
+      <label for="inputEmail">Email:</label>
+      <br>
+      <input type="text" class="form-field" id="inputEmail" placeholder="Email" name="email" maxlength="35">
+    </div>
+      <div class="form-row">
+      <label for="inputEmail">Phone:</label>
+      <br>
+      <input type="tel" class="form-field" id="inputPhone" placeholder="Phone" name="phone" maxlength="35">
+      </div>
+    <div class="form-row">
+      <label for="inputMessage">Write your message:</label>
+      <br>
+      <textarea class="form-field texarea" name="message" maxlength="400" id="inputMessage" placeholder="Leave your message here.."></textarea>
+    </div>
+    <div class="form-row">
+      <input type="submit" name="action" value="Send" class="btn">
+    </div>
+  </form>
+</div>
+
+
+
+<script src="form_validator.js"></script>
+
+
+</body>
+</html>
+
+
+
+
