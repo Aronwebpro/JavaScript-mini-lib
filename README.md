@@ -6,6 +6,11 @@ I think is crazy to use such a big libraries when you need just only one feature
 I tried to make more universal code to cover more cases, but everything can be improved and changed to fit in specific situations. 
 In the files also is included HTML and CSS scripts so you can just copy/paste and it will work.  
 
+## DEMO
+[Modal](https://aronwebpro.github.io/fun-javascript/Modal/)
+
+
+
 ## Notes
 I will update this repo continuously
 
