@@ -11,23 +11,63 @@
   padding: 0;
   background-color: #e8e8e8;
 	}
-</style>
-</head>
-<body>
 
-<div class="wrapper" style="max-width: 1350px; margin:auto;">
-          
-<div class="details-similar-larger">
-  <a name="similar_anchor"></a>
-  <h2 class="text-color">Model Scroller<span class="arrow"></span></h2>
-  <div class="border" style="display:block;max-height:290px; overflow: hidden;">
-
-<style>
+/*Models Scroller Styles*/  
+.scroller {
+  width: 100%;
+  min-width: 245px;
+  background-color: #fff;
+  position:relative;
+  font-size:16px;
+}
+.model_scroller {
+  position: relative;
+  margin: 0;
+}
+.model_scroller .item_space {
+  margin: 0 auto;
+  padding: 5px 0 10px;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.model_scroller .item_space .moving_space {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0px;
+  transition: left ease-out 0.7s ; 
+}
 .model_scroller .item_cont {
   display: block;
   float: left;
   text-align: center;
-
+}
+.model_scroller .item_space .item img {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+}
+.model_scroller_item ul {
+  max-width: 370px;
+  width:93%;
+  margin: -6px auto 0;
+  padding: 5px;
+  text-align: left;
+  position: relative;
+  list-style: none;
+}
+.model_scroller_item li a {
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size:0.8em;
+}
+.scroller-img-wrapper {
+  margin: auto;
 }
 .model_scroller .prev, .scroller .next {
   position:absolute;
@@ -36,6 +76,7 @@
   width:10%;
   height:30px; 
   cursor: pointer;
+  z-index: 1;
 }
 .model_scroller .scroller-control {
     top: 50%;
@@ -53,66 +94,6 @@
   opacity:0.5;
   filter:alpha(opacity=50);
 }
-.model_scroller .item_space .moving_space {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 0px;
-  transition: left ease-out 0.7s ; 
-}
-.model_scroller .item_space .moving_space .item {
-  
-}
-.model_scroller .item_space .item img {
-  width: 90%;
-  max-width: 100%;
-  height: auto;
-}
-.model_scroller {
-/*  overflow-x: hidden;
-  overflow-y: visible;*/
-  position: relative;
-  margin: 0;
-}
-.model_scroller_item ul {
-  max-width: 370px;
-  width:93%;
-  margin: -6px auto 0;
-  padding: 5px;
-  text-align: left;
-  position: relative;
-  list-style: none;
-  
-}
-.model_scroller_item li a {
-    color: #fff;
-    line-height: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    font-size:0.8em;
-}
-
-.scroller-img-wrapper {
-  margin: auto;
-}
-#scroller {
-  width: 100%;
-  min-width: 245px;
-  background-color: #fff;
-  position:relative;
-  font-size:16px;
-}
-#scroller .item_space {
-  margin: 0 auto;
-  padding: 5px 0 10px;
-  height: 18em;
-  width: 80%;
-  text-align: center;
-  position: relative;
-  overflow-x: hidden;
-
-}
 /*Extras*/
 .scroller-title {
     background-color: #4a4a4a;
@@ -127,10 +108,20 @@
 .btn-hidden {
   display: none !important;
 }
-</style>  
-  
-  
-<div id="scroller" class="scroller model_scroller">
+#scroller2 .item_space .item img {
+  width: 99%;
+}
+</style> 
+</head>
+<body>
+
+<div class="wrapper" style="max-width: 1350px; margin:auto;">
+          
+<div class="details-similar-larger">
+  <a name="similar_anchor"></a>
+  <h2 class="text-color">Model Scroller V1<span class="arrow"></span></h2>
+  <div class="border" style="display:block;max-height:290px; overflow: hidden;">  
+    <div id="scroller" class="scroller model_scroller">
    <div class="prev scroller-control passive" id="scroll_prev"></div>
    <div class="item_space">
       <div class="moving_space">
@@ -223,6 +214,61 @@
       </div>
    </div>
    <div class="next scroller-control" id="scroll_next"></div>
+  </div>
+</div>
+
+
+<div class="wrapper" style="max-width: 1350px; margin:auto;">
+          
+<div class="details-similar-larger">
+  <a name="similar_anchor"></a>
+  <h2 class="text-color">Model Scroller V2<span class="arrow"></span></h2>
+  <div class="border" style="display:block;max-height:290px; overflow: hidden;">
+
+<div id="scroller2" class="scroller model_scroller">
+   <div class="prev scroller-control passive" id="scroll_prev" style="width:6%"></div>
+   <div class="item_space" style="width: 100%">
+      <div class="moving_space">
+      <!-- ***************Scroller Items********************* -->
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/201816.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/201990.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/7490.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/200336.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/201989.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/200275.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>
+        <div class="item_cont">
+           <div class="item model_scroller_item">
+              <div class="scroller-img-wrapper" ><img class="loaded" src="http://images.redbox.com/Images/EPC/boxartlarge/4777.jpg" alt="Img Alternative"></div>
+           </div>
+        </div>  
+         <!-- ************************************************** -->
+      </div>
+   </div>
+   <div class="next scroller-control" id="scroll_next" style="width:6%"></div>
 </div>
 </div>
 <h2>Developed by Aaron D</h2>
