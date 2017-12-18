@@ -11,6 +11,8 @@ In the files also is included HTML and CSS scripts so you can just copy/paste an
 
 --[Form Validator](https://aronwebpro.github.io/fun-javascript/FormValidator/)
 
+--[Models Scroller](https://aronwebpro.github.io/fun-javascript/ModelScroller/)
+
 
 ## Notes
 I will update this repo continuously
