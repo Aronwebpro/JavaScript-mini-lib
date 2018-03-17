@@ -7,11 +7,11 @@ I tried to make more universal code to cover more cases, but everything can be i
 In the files also is included HTML and CSS scripts so you can just copy/paste and it will work.  
 
 ## DEMO
---[Modal](https://aronwebpro.github.io/fun-javascript/Modal/)
+--[Modal](https://aronwebpro.github.io/JavaScript-mini-lib/Modal/)
 
---[Form Validator](https://aronwebpro.github.io/fun-javascript/FormValidator/)
+--[Form Validator](https://aronwebpro.github.io/JavaScript-mini-lib/FormValidator/)
 
---[Models Scroller](https://aronwebpro.github.io/fun-javascript/ModelScroller/)
+--[Models Scroller](https://aronwebpro.github.io/JavaScript-mini-lib/ModelScroller/)
 
 
 ## Notes
