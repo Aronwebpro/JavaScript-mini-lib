@@ -43,5 +43,5 @@ var Swipe = function () {
 	};
 }();
 
-//To ini
+//To init
 Swipe.setup();
