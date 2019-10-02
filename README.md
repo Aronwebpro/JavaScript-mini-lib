@@ -7,6 +7,13 @@ I think is crazy to use such a big libraries when you need just only one feature
  
 I also included HTML and CSS so just copy/paste and that will work.  
 
+## UI Modules
+-- Modal 
+-- Scroller
+-- Swipe functionality on Mobile
+-- Form Validator
+-- Message
+
 ## DEMO
 --[Modal](https://aronwebpro.github.io/JavaScript-mini-lib/Modal/)
 
