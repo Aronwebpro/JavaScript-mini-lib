@@ -9,9 +9,13 @@ I also included HTML and CSS so just copy/paste and that will work.
 
 ## UI Modules
 -- Modal 
+
 -- Scroller
+
 -- Swipe functionality on Mobile
+
 -- Form Validator
+
 -- Message
 
 ## DEMO
