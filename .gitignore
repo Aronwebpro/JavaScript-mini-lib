@@ -1,0 +1,8 @@
+node_modules
+*.tgz
+requirements.lock
+.idea
+dist
+dist-test
+.env.development
+.DS_Store
